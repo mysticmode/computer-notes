@@ -1,0 +1,26 @@
+Hyperlink to the page - https://cs.yale.edu/homes/aspnes/classes/223/notes.html
+
+Why should you learn to program in C?
+ - C runs on everything.
+ - C lets you write programs that use very few resources.
+ - C gives you near-total control over the system, down to the level of pushing around 
+   individual bits with your bare hands.
+ - C imposes very few constraints on programming style: unlike higher-level languages,
+   C doesn't have much of an ideology. There are very few programs you can't write in C.
+ - Many of the programming languages people actually use (Visual Basic, perl, python, ruby,
+   PHP, etc,.) are executed by interpreters written in C (or C++, an extension to c).
+   
+You will learn discipline.
+ - C makes it easy to shoot yourself in the foot.
+ - You can learn to avoid this by being careful about where you point it.
+ - Pain is a powerful teacher of caution.
+ 
+Compiling and running a program
+$ gcc -g3 -o count count.c
+
+A command to compile the program. The dollar sign is my prompt, which is printed by the
+system to tell me it is waiting for a command. The command calls gcc with arguments -g3
+which is enabling maxium debugging info, -o speicifies executable file name, otherwise
+defaults to a.out, ./count the actual executable file name, and foo.c is the source file
+to compile. This tells gcc that we should compile count.c to count with maxiumum debugging
+info included in the executable file.
